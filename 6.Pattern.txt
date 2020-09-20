@@ -1,0 +1,47 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int columns = 2*n-1;
+ 
+    int logic = 2*n-3;
+    int constant =1;
+    for(int i=1;i<=n;i++)
+    {
+        int ng=1;
+        for(int j=1;j<=constant;j++)
+        {
+ 
+            cout<<ng<<"\t";
+            ng++;
+        }
+        if(i==n)
+        {
+            constant--;
+            ng--;
+        }
+        for(int k=1;k<=logic;k++)
+        {
+            
+            cout<<"\t";
+ 
+ 
+ 
+        }
+ 
+        for(int j=1;j<=constant;j++)
+        {
+            ng--;
+            cout<<ng<<"\t";
+ 
+        }
+        constant++;
+        logic-=2;
+        cout<<endl;
+    }
+ 
+ 
+ 
+}
